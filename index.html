@@ -97,7 +97,9 @@ let userImg = null;
 
 // Inner photo area of the supplied 1122x1402 poster.
 // The yellow border remains part of the original poster.
-const frame = { x: 633, y: 250, w: 375, h: 500, r: 32 };
+// Measured from the gray placeholder (x 643–1026, y 251–766), expanded by
+// 1px so the anti-aliased edge of the placeholder is fully covered.
+const frame = { x: 642, y: 250, w: 386, h: 518, r: 35 };
 
 function roundRectPath(c, x, y, w, h, r) {
   r = Math.min(r, w/2, h/2);
